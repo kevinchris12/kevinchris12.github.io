@@ -1,2 +1,110 @@
-<h1>Este es un sitio web con Github Pages</h1>
-<p>Creado por mi</p>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header Section (Persistent) -->
+  <header class="main-header">
+    <div class="header-image-container">
+      <!-- User should place header image here: images/header/main-header.webp -->
+      <img src="images/header/main-header.webp" alt="Header Image" class="header-img"
+        onerror="this.src='https://via.placeholder.com/1200x400?text=Header+Image'">
+
+      <nav class="main-nav">
+        <button class="nav-btn active" data-target="proyectos">Proyectos</button>
+        <button class="nav-btn" data-target="bio">Bio</button>
+        <button class="nav-btn" data-target="certificados">Certificados</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-area">
+
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="section active">
+      <div class="project-list">
+        <!-- Example Project Item -->
+        <article class="project-item">
+          <div class="project-bg" style="background-image: url('images/backgrounds/project-bg-1.webp');"></div>
+          <div class="project-content">
+            <div class="project-visual">
+              <img src="images/projects/project-1.webp" alt="Proyecto 1"
+                onerror="this.src='https://via.placeholder.com/400x300?text=Proyecto+1'">
+            </div>
+            <div class="project-info">
+              <h3>Nombre del Proyecto</h3>
+              <p>Breve descripción del proyecto. Tecnología usada, propósito y logros principales.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div class="project-bg" style="background-image: url('images/backgrounds/project-bg-2.webp');"></div>
+          <div class="project-content">
+            <div class="project-visual">
+              <img src="images/projects/project-2.webp" alt="Proyecto 2"
+                onerror="this.src='https://via.placeholder.com/400x300?text=Proyecto+2'">
+            </div>
+            <div class="project-info">
+              <h3>Otro Proyecto</h3>
+              <p>Descripción breve de este otro proyecto interesante.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="section">
+      <div class="bio-container">
+        <div class="bio-text">
+          <h2>Sobre Mí</h2>
+          <p>
+            Hola, soy [Tu Nombre]. Soy un apasionado desarrollador web...
+            <br><br>
+            Aquí puedes escribir tu biografía, experiencia y habilidades.
+            Este espacio está diseñado para contar tu historia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificados Section -->
+    <section id="certificados" class="section">
+      <div class="certificates-grid">
+        <!-- 8 Placeholders for certificates -->
+        <div class="cert-item"><img src="images/certificates/cert-1.webp" alt="Certificado 1"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert-2.webp" alt="Certificado 2"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert-3.webp" alt="Certificado 3"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert-4.webp" alt="Certificado 4"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert-5.webp" alt="Certificado 5"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert-6.webp" alt="Certificado 6"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert-7.webp" alt="Certificado 7"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert-8.webp" alt="Certificado 8"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
