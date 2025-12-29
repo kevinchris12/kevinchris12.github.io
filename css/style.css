@@ -5,12 +5,18 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #000;
+  /* Fondo negro global fallback */
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #000;
-  /* Fondo negro global */
+  background-color: transparent;
+  /* Permitir ver el fondo fijo */
   color: #fff;
   overflow-x: hidden;
+  min-height: 100vh;
   /* Prevenir scroll horizontal accidental */
 }
 
@@ -28,7 +34,9 @@ body {
   gap: 15px;
   backdrop-filter: blur(5px);
   /* New requested dimensions */
-  width: 400px;
+  /* New requested dimensions */
+  width: 95%;
+  max-width: 400px;
   height: 50px;
   justify-content: center;
   align-items: center;
@@ -82,8 +90,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  /* width: 100vw; height: 100vh; removed for better mobile support */
   z-index: -10;
   background-size: cover;
   background-position: center;
@@ -257,7 +266,7 @@ body {
   }
 
   .main-nav {
-    transform: scale(0.9);
+    transform: translateX(-50%) scale(0.9);
   }
 }
 
