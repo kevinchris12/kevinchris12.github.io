@@ -12,52 +12,123 @@
 </head>
 
 <body>
+  <div id="global-bg"></div>
 
-  <!-- Header Section (Persistent) -->
-  <header class="main-header">
-    <div class="header-image-container">
-      <!-- User should place header image here: images/header/main-header.webp -->
-      <img src="images/header/main-header.webp" alt="Header Image" class="header-img"
-        onerror="this.src='https://via.placeholder.com/1200x400?text=Header+Image'">
-
-      <nav class="main-nav">
-        <button class="nav-btn active" data-target="proyectos">Proyectos</button>
-        <button class="nav-btn" data-target="bio">Bio</button>
-        <button class="nav-btn" data-target="certificados">Certificados</button>
-      </nav>
-    </div>
-  </header>
+  <nav class="main-nav">
+    <!-- Botones de navegación de pantallas -->
+    <button class="nav-btn active" data-target="proyectos">Proyectos</button>
+    <button class="nav-btn" data-target="bio">Bio</button>
+    <button class="nav-btn" data-target="certificados">Certificados</button>
+  </nav>
 
   <main class="content-area">
 
     <!-- Proyectos Section -->
     <section id="proyectos" class="section active">
       <div class="project-list">
-        <!-- Example Project Item -->
+        <!-- Proyecto 5 -->
         <article class="project-item">
-          <div class="project-bg" style="background-image: url('images/backgrounds/project-bg-1.webp');"></div>
+          <div class="project-bg" style="background-image: url('images/backgrounds/project_bg.webp');"></div>
           <div class="project-content">
             <div class="project-visual">
-              <img src="images/projects/project-1.webp" alt="Proyecto 1"
-                onerror="this.src='https://via.placeholder.com/400x300?text=Proyecto+1'">
+              <img src="images/projects/project_5.webp" alt="Proyecto 5"
+                onerror="this.src='https://via.placeholder.com/400x300?text=Proyecto+5'">
             </div>
             <div class="project-info">
-              <h3>Nombre del Proyecto</h3>
-              <p>Breve descripción del proyecto. Tecnología usada, propósito y logros principales.</p>
+              <h3>Gemini Nano Banana Image Generator</h3>
+              <p style="text-align: justify;">Esta es una aplicación web para generar imágenes con una interfaz similar
+                a ComfyUI.
+                Permite ingresar múltiples referencias, un prompt negativo, configurar el formato de salida de la imagen
+                y descargar la imagen generada. Esta aplicación se creo usando Google AI Studio.
+                El modelo por defecto para generar imágenes en esta aplicación es el LLM Gemini 2.5 Flash Image usando
+                Nano Banana.
+              </p>
+              <a href="https://github.com/kevinchris12/GeminiNanoBanana_Image_Generator" target="_blank"
+                rel="noopener noreferrer" class="project-link">Ver Proyecto</a>
             </div>
           </div>
         </article>
 
+        <!-- Proyecto 4 -->
         <article class="project-item">
-          <div class="project-bg" style="background-image: url('images/backgrounds/project-bg-2.webp');"></div>
+          <div class="project-bg" style="background-image: url('images/backgrounds/project_bg.webp');"></div>
           <div class="project-content">
             <div class="project-visual">
-              <img src="images/projects/project-2.webp" alt="Proyecto 2"
+              <img src="images/projects/project_4.webp" alt="Proyecto 4"
+                onerror="this.src='https://via.placeholder.com/400x300?text=Proyecto+4'">
+            </div>
+            <div class="project-info">
+              <h3>App Inventario Google Cloud</h3>
+              <p style="text-align: justify;">Esta es una app que simplifica la elaboración de inventarios.
+                Esta app esta enfocada en el sistema android para smartphones.
+                Los datos generados son almacenados en Google Cloud.
+              </p>
+              <a href="https://github.com/kevinchris12/App_Inventario_GoogleCloud" target="_blank"
+                rel="noopener noreferrer" class="project-link">Ver Proyecto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project-item">
+          <div class="project-bg" style="background-image: url('images/backgrounds/project_bg.webp');"></div>
+          <div class="project-content">
+            <div class="project-visual">
+              <img src="images/projects/project_3.webp" alt="Proyecto 3"
+                onerror="this.src='https://via.placeholder.com/400x300?text=Proyecto+3'">
+            </div>
+            <div class="project-info">
+              <h3>Code Assistant</h3>
+              <p style="text-align: justify;">Chatbot que funciona como asistente para la consulta sobre la
+                documentación de la plataforma
+                Detectron2.
+                El chatbot utiliza el modelo de llm DeepSeek-R1-Distill-Qwen-1.5B.
+                Además, utiliza el framework de LangChain para implementar la estructura del proyecto.
+              </p>
+              <a href="https://github.com/kevinchris12/CODE_ASSISTANT" target="_blank" rel="noopener noreferrer"
+                class="project-link">Ver Proyecto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-item">
+          <div class="project-bg" style="background-image: url('images/backgrounds/project_bg.webp');"></div>
+          <div class="project-content">
+            <div class="project-visual">
+              <img src="images/projects/project_2.webp" alt="Proyecto 2"
                 onerror="this.src='https://via.placeholder.com/400x300?text=Proyecto+2'">
             </div>
             <div class="project-info">
-              <h3>Otro Proyecto</h3>
-              <p>Descripción breve de este otro proyecto interesante.</p>
+              <h3>Chat Telegram DeepSeek</h3>
+              <p style="text-align: justify;">Chat en telegram que conecta al usuario con un modelo de deepseek.
+                El chatbot tiene como modelo base el DeepSeek-R1-Distill-Qwen-1.5B.
+                Se puede acceder al chatbot mediante telegram web o app.
+              </p>
+              <a href="https://github.com/kevinchris12/Chat_telegram_deepseek" target="_blank" rel="noopener noreferrer"
+                class="project-link">Ver Proyecto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 1 -->
+        <article class="project-item">
+          <div class="project-bg" style="background-image: url('images/backgrounds/project_bg.webp');"></div>
+          <div class="project-content">
+            <div class="project-visual">
+              <img src="images/projects/project_1.webp" alt="Proyecto 1"
+                onerror="this.src='https://via.placeholder.com/400x300?text=Proyecto+1'">
+            </div>
+            <div class="project-info">
+              <h3>Chat WhatsApp OpenAI</h3>
+              <p style="text-align: justify;">Chatbot de una veterinaria llamada "MedPet".
+                Mediante este se pueden agendar citas, consultar sobre temas relacionados con tus mascotas, entre otros.
+                La comunicación con los clientes se realiza en la plataforma de WhatsApp.
+                Los clientes pueden realizar consultas y estas serán respondidas utilizando el modelo "gpt-4o-mini" de
+                OpenAI.
+              </p>
+              <a href="https://github.com/kevinchris12/MedPet" target="_blank" rel="noopener noreferrer"
+                class="project-link">Ver Proyecto</a>
             </div>
           </div>
         </article>
@@ -69,11 +140,54 @@
       <div class="bio-container">
         <div class="bio-text">
           <h2>Sobre Mí</h2>
+          <img src="images/photo/photo.webp" alt="Kevin Hernández Ventocilla" class="bio-image"
+            style="width: 50%; display: block; margin: 20px auto;">
           <p>
-            Hola, soy [Tu Nombre]. Soy un apasionado desarrollador web...
+            <strong>Nombre:</strong> Kevin Hernández Ventocilla
+            <br>
+            <strong>Correo:</strong> kevinventocilla123@gmail.com
+            <br>
+            <strong>Ubicación:</strong> Lima, Perú
+            <br>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kevinhernandezventocilla/">LinkedIn</a>
+            <br>
+            <strong>GitHub:</strong> <a href="https://github.com/kevinchris12">GitHub</a>
             <br><br>
-            Aquí puedes escribir tu biografía, experiencia y habilidades.
-            Este espacio está diseñado para contar tu historia.
+            Soy un apasionado programador enfocado en la robótica móvil y el desarrollo
+            de aplicaciones con AI.
+            <br><br>
+            Desarrollé múltiples chatbots y agentes con distintas finalidades usando LLMs de OpenAI y DeepSeek e
+            implementé estos chatbots en Telegram y WhatsApp.
+
+            <br><br>
+          <ul style="text-align: left; list-style-position: inside; padding-left: 0;">
+            <strong>Skills:</strong>
+            <br><br>
+            <li>Python Intermedio</li>
+            <li>Flutter Intermedio</li>
+            <li>Desarrollo de chatbots con LLMs</li>
+            <li>Desarrollo de agentes con LLMs</li>
+            <li>Experiencia con LLMs de OpenAI y DeepSeek</li>
+            <li>Desarrollo de aplicaciones con AI</li>
+            <li>Desarrollo de aplicaciones móviles con Flutter</li>
+            <li>Desarrollo de aplicaciones con Google AI Studio, Antigravity, Visual Studio Code</li>
+            <li>Consumo de APIs Intermedio</li>
+            <li>Google Cloud Básico</li>
+            <li>Github Copilot Básico</li>
+            <li>Firebase Básico</li>
+            <li>Pytorch Básico</li>
+            <li>Tensorflow Básico</li>
+            <li>Langchain Intermedio</li>
+            <li>C++ Básico</li>
+            <li>SQL Básico</li>
+            <li>NoSQL Básico</li>
+            <li>HTML Básico</li>
+            <li>CSS Básico</li>
+            <li>JavaScript Básico</li>
+            <li>Git Intermedio</li>
+            <li>Excel Intermedio</li>
+            <li>Inglés Intermedio</li>
+          </ul>
           </p>
         </div>
       </div>
@@ -82,22 +196,82 @@
     <!-- Certificados Section -->
     <section id="certificados" class="section">
       <div class="certificates-grid">
-        <!-- 8 Placeholders for certificates -->
-        <div class="cert-item"><img src="images/certificates/cert-1.webp" alt="Certificado 1"
+        <!-- Diplomas importantes -->
+        <div class="cert-item"><img src="images/certificates/cert_1.webp" alt="Certificado 1"
             onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
-        <div class="cert-item"><img src="images/certificates/cert-2.webp" alt="Certificado 2"
+        <div class="cert-item"><img src="images/certificates/cert_2.webp" alt="Certificado 2"
             onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
-        <div class="cert-item"><img src="images/certificates/cert-3.webp" alt="Certificado 3"
+        <div class="cert-item"><img src="images/certificates/cert_3.webp" alt="Certificado 3"
             onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
-        <div class="cert-item"><img src="images/certificates/cert-4.webp" alt="Certificado 4"
+        <div class="cert-item"><img src="images/certificates/cert_4.webp" alt="Certificado 4"
             onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
-        <div class="cert-item"><img src="images/certificates/cert-5.webp" alt="Certificado 5"
+
+        <!-- Diplomas de cursos importantes -->
+        <div class="cert-item"><img src="images/certificates/cert_5.webp" alt="Certificado 5"
             onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
-        <div class="cert-item"><img src="images/certificates/cert-6.webp" alt="Certificado 6"
+        <div class="cert-item"><img src="images/certificates/cert_6.webp" alt="Certificado 6"
             onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
-        <div class="cert-item"><img src="images/certificates/cert-7.webp" alt="Certificado 7"
+        <div class="cert-item"><img src="images/certificates/cert_7.webp" alt="Certificado 7"
             onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
-        <div class="cert-item"><img src="images/certificates/cert-8.webp" alt="Certificado 8"
+        <div class="cert-item"><img src="images/certificates/cert_8.webp" alt="Certificado 8"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_9.webp" alt="Certificado 9"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_10.webp" alt="Certificado 10"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_11.webp" alt="Certificado 11"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_12.webp" alt="Certificado 12"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_13.webp" alt="Certificado 13"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_14.webp" alt="Certificado 14"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_15.webp" alt="Certificado 15"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_16.webp" alt="Certificado 16"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_17.webp" alt="Certificado 17"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_18.webp" alt="Certificado 18"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_19.webp" alt="Certificado 19"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_20.webp" alt="Certificado 20"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_21.webp" alt="Certificado 21"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_22.webp" alt="Certificado 22"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_23.webp" alt="Certificado 23"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+
+        <!-- Diplomas -->
+        <div class="cert-item"><img src="images/certificates/cert_24.webp" alt="Certificado 24"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_25.webp" alt="Certificado 25"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_26.webp" alt="Certificado 26"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_27.webp" alt="Certificado 27"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_28.webp" alt="Certificado 28"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_29.webp" alt="Certificado 29"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_30.webp" alt="Certificado 30"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_31.webp" alt="Certificado 31"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_32.webp" alt="Certificado 32"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_33.webp" alt="Certificado 33"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_34.webp" alt="Certificado 34"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_35.webp" alt="Certificado 35"
+            onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
+        <div class="cert-item"><img src="images/certificates/cert_36.webp" alt="Certificado 36"
             onerror="this.src='https://via.placeholder.com/300x200?text=Certificado'"></div>
       </div>
     </section>
